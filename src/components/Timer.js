@@ -70,7 +70,7 @@ const Timer = ({ onConfirm, onSartSorting, sortStarted, gameFinished }) => {
   const [hour, setHour] = useState(0)
   const [openModal, setOpenModal] = useState(false)
   const onClickStart = () => {
-    if (inputNumber > 200 || inputNumber < 5) return
+    if (inputNumber > 200 || inputNumber < 20) return
     onConfirm(inputNumber)
     setOpenModal(false)
     setMinutes(0)
@@ -190,7 +190,7 @@ const Timer = ({ onConfirm, onSartSorting, sortStarted, gameFinished }) => {
                 Cancel
               </Button>
               <Button
-                disabled={inputNumber < 5 || inputNumber > 200}
+                disabled={inputNumber < 20 || inputNumber > 200}
                 startIcon={<PlayArrowIcon />}
                 className={classes.btnStart}
                 variant="contained"

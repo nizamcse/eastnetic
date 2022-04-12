@@ -37,7 +37,7 @@ function App() {
   const onSartSorting = () => setSortStarted(true)
 
   const onConfirm = (val) => {
-    if (val < 5 || val > 200) return
+    if (val < 20 || val > 200) return
     setToTalRows(val)
   }
 
