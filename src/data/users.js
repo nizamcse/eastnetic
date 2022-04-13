@@ -7,7 +7,7 @@ const random = (min, max) => {
 export const generateUsers = (n) => {
   const mailExtensions = ["@gmail.com", "@yahoo.com", "@example.com"]
   const getRandomMailExtension = () => {
-    return mailExtensions[Math.floor(random(1, 5)) - 1]
+    return mailExtensions[Math.floor(random(1, 3)) - 1]
   }
   const generateMailFromName = (name) => {
     try {

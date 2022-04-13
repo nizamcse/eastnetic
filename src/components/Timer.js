@@ -145,7 +145,7 @@ const Timer = ({ onConfirm, onSartSorting, sortStarted, gameFinished }) => {
             color="primary"
             onClick={onClickStartSorting}
           >
-            Start Sorting
+            Create Records
           </Button>
         )}
       </Box>
